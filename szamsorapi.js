@@ -30,8 +30,6 @@ let mathFunction = (mathName, number) => {
             }
             return fibArray;
 
-            break;
-
         case "prim":
 
             let primeCheck = numbs => {
@@ -60,35 +58,29 @@ let mathFunction = (mathName, number) => {
             }
             return primeNumbers(1, num);
 
-            break;
 
         case "paratlan":
 
             let uniqueNum = makeArray(num).filter(el => el % 2 != 0);
             return uniqueNum;
 
-            break;
 
         case "paros":
 
             let coupleNum = makeArray(num).filter(el => el % 2 == 0);
             return coupleNum;
 
-            break;
 
         case "negyzetgyok":
 
             let sqr = makeArray(num).map(el => Math.sqrt(el));
             return sqr;
 
-            break;
 
         case "exp":
 
             let exp = makeArray(num).map(el => Math.exp(el));
             return exp;
-
-            break;
 
         default:
             break;
